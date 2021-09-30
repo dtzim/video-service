@@ -11,8 +11,8 @@ public class VideoDTO {
   private String videoLink;
   private String imageLink;
   private String description;
+  private String title;
   private String level;
-
   private String type;
   private List<String> pose;
   private boolean isFavorite;
@@ -47,6 +47,13 @@ public class VideoDTO {
     this.description = description;
   }
 
+  public String getTitle() {
+    return title;
+  }
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
   public String getLevel() { return level; }
   public void setLevel(String level) {
     this.level = level;
@@ -74,6 +81,7 @@ public class VideoDTO {
         ", videoLink='" + videoLink + '\'' +
         ", imageLink='" + imageLink + '\'' +
         ", description='" + description + '\'' +
+        ", title='" + title + '\'' +
         ", level=" + level +
         ", type='" + type + '\'' +
         ", pose=" + pose +
